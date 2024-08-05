@@ -1,6 +1,6 @@
 -- Load Orion Library
 local OrionLib = loadstring(game:HttpGet(('https://www.paste.tc/raw/sasa-11138')))()
-local Window = OrionLib:MakeWindow({Name = "Mitamers Hub - Made by Ertu&Makrit enjoy!", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionConfig"})
+local Window = OrionLib:MakeWindow({Name = "Mitamers Hub - Made by Ertu & Makrit enjoy!", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionConfig"})
 
 -- Tab: KAT
 local TabKAT = Window:MakeTab({
@@ -15,7 +15,7 @@ local SectionKAT = TabKAT:AddSection({
 
 -- Button: Ertuxrq&Makrit Music
 SectionKAT:AddButton({
-    Name = "Ertuxrq & Makrit Music",
+    Name = "KAT Music",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/NaikoScript/Kat-Plus/main/Script"))()
         OrionLib:MakeNotification({
