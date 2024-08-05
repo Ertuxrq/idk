@@ -1,6 +1,6 @@
 -- Load Orion Library
 local OrionLib = loadstring(game:HttpGet(('https://www.paste.tc/raw/sasa-11138')))()
-local Window = OrionLib:MakeWindow({Name = "XRQWARE - Made by Ertuxrq enjoy!", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionConfig"})
+local Window = OrionLib:MakeWindow({Name = "Mitamers Hub - Made by Ertu&Makrit enjoy!", HidePremium = true, SaveConfig = true, ConfigFolder = "OrionConfig"})
 
 -- Tab: KAT
 local TabKAT = Window:MakeTab({
@@ -21,36 +21,6 @@ SectionKAT:AddButton({
         OrionLib:MakeNotification({
             Name = "Başarılı!",
             Content = "Musicer adlı script çalıştırıldı!",
-            Image = "rbxassetid://4483345998",
-            Time = 2
-        })
-    end
-})
-
--- Slider: AntiAim (Blatant)
-local Slider = SectionKAT:AddSlider({
-    Name = "AntiAim (Blatant)",
-    Min = 0,
-    Max = 500,
-    Default = 0,
-    Color = Color3.fromRGB(255, 0, 0),
-    Increment = 1,
-    ValueName = "speed",
-    Callback = function(s)
-        local speed = s
-        local plr = game:GetService("Players").LocalPlayer
-        repeat task.wait() until plr.Character
-        local humRoot = plr.Character:WaitForChild("HumanoidRootPart")
-        plr.Character:WaitForChild("Humanoid").AutoRotate = false
-        local velocity = Instance.new("AngularVelocity")
-        velocity.Attachment0 = humRoot:WaitForChild("RootAttachment")
-        velocity.MaxTorque = math.huge
-        velocity.AngularVelocity = Vector3.new(0, speed, 0)
-        velocity.Parent = humRoot
-        velocity.Name = "Spinbot"
-        OrionLib:MakeNotification({
-            Name = "Başarılı!",
-            Content = "AntiAim adlı script çalıştırıldı!",
             Image = "rbxassetid://4483345998",
             Time = 2
         })
