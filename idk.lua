@@ -78,7 +78,7 @@ SectionKAT:AddButton({
 SectionKAT:AddButton({
     Name = "KAT CRASHER",
     Callback = function()
-        loadstring(game:HttpGet("https://pastebinp.com/raw/jfR556Kb"))()
+        loadstring(game:HttpGet("https://paste.tc/raw/katsilahkaldr"))()
         OrionLib:MakeNotification({
             Name = "Başarılı!",
             Content = "KAT CRASHER adlı script çalıştırıldı!",
